@@ -1,0 +1,18 @@
+requests
+numpy
+scipy
+wandb
+colorlog
+tqdm
+h5py
+ipdb
+opencv-python
+imageio
+mpi4py
+gym
+mujoco-py
+#torch
+#torchvision
+absl-py
+dm_control
+# https://github.com/denisyarats/dmc2gym.git

@@ -138,7 +138,8 @@ def create_skill_chaining_parser():
     parser.set_defaults(log_root_dir="log")
     parser.set_defaults(wandb=False)
     parser.set_defaults(wandb_project=None)
-    parser.set_defaults(policy_mlp_dim=[128, 128])
+    parser.set_defaults(policy_mlp_dim=[64, 64])
+    parser.set_defaults(critic_mlp_dim=[64, 64])
     parser.set_defaults(max_global_step=int(1e8))
 
     # PPO/GAIL
@@ -153,6 +154,7 @@ def create_skill_chaining_parser():
     parser.set_defaults(gail_env_reward=0.5)
     parser.set_defaults(discriminator_loss_type="lsgan")
     parser.set_defaults(demo_low_level=True)
+    parser.set_defaults(encoder_conv_dim=16)
 
     # furniture
     if "furniture" in args.env.lower() or "IKEA" in args.env:
